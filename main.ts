@@ -1,7 +1,7 @@
 // Copyright (c) HashiCorp, Inc
 // SPDX-License-Identifier: MPL-2.0
 import { Construct } from "constructs";
-import { App, TerraformStack } from "cdktf";
+import { App, TerraformOutput } from "cdktf";
 import { NutrinoCdktfStack } from "nutrino-tf/NutrinoCdktfStack";
 // Import modules here  
 // import { ModuleName } from "./.gen/modules/<ModuleName>"
@@ -11,6 +11,9 @@ class MyStack extends NutrinoCdktfStack {
   constructor(scope: Construct, id: string) {
     super(scope, id);
     // define resources here
+
+
+    // define outputs here
   }
 }
 
