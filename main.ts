@@ -1,7 +1,7 @@
 // Copyright (c) HashiCorp, Inc
 // SPDX-License-Identifier: MPL-2.0
 import { Construct } from "constructs";
-import { App, TerraformOutput } from "cdktf";
+import { App } from "cdktf";
 import { NutrinoCdktfStack } from "nutrino-tf/NutrinoCdktfStack";
 // Import modules here  
 // import { ModuleName } from "./.gen/modules/<ModuleName>"
@@ -18,5 +18,5 @@ class MyStack extends NutrinoCdktfStack {
 }
 
 const app = new App();
-new MyStack(app, "cdktf_serverless_app");
+new MyStack(app, `${repoName}-infra`);
 app.synth();
