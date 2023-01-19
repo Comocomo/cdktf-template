@@ -3,6 +3,7 @@
 import { Construct } from "constructs";
 import { App } from "cdktf";
 import { NutrinoCdktfStack , repoName } from "nutrino-tf/NutrinoCdktfStack";
+import { NutrinoTFOutput } from "nutrino-tf/NutrinoTFOutput";
 // Import modules here  
 // import { ModuleName } from "./.gen/modules/<ModuleName>"
 // The ModuleName is the name you set to it in the cdktf.json with a capital first letter
