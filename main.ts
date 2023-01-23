@@ -15,8 +15,9 @@ async function getGitRootDir() {
 }
 
 class MyStack extends NutrinoCdktfStack {
-  async init() {
-        await super.init()
+    constructor(scope: Construct, id: string){
+        super(scope, id);
+
     // define resources here
 
 
@@ -26,7 +27,7 @@ class MyStack extends NutrinoCdktfStack {
 
 (async() => {
     const app = new App();
-    const stack = new MyStack(app, getGitRootDir());
-    await stack.init();
+    const stack_id = await getGitRootDir();
+    new MyStack(app, stack_id);
     app.synth();
 })()
