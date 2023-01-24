@@ -4,12 +4,7 @@
   "projectId": "a674535b-e031-4b6b-b76c-f2749bd54e89",
   "sendCrashReports": "false",
   "terraformProviders": [],
-  "terraformModules": [
-    {
-      "name": "sqs",
-      "source": "git@github.com:Comocomo/terraform-modules.git//nutrino-assets/sqs?ref=cdktf_demo_v0.0.2"
-    }
-  ],
+  "terraformModules": [],
   "context": {
     "excludeStackIdFromLogicalIds": "true",
     "allowSepCharsInLogicalIds": "true"
