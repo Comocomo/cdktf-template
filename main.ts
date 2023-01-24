@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: MPL-2.0
 import { Construct } from "constructs";
 import { App } from "cdktf";
-import simpleGit from 'simple-git';
 import { NutrinoCdktfStack , repoName, NutrinoTFOutput } from "@comocomo/cdktf-nutrino-class";
 // Import modules here  
 // import { ModuleName } from "./.gen/modules/<ModuleName>"
