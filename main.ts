@@ -6,7 +6,7 @@ import { NutrinoCdktfStack , getRepo, NutrinoTFOutput } from "@comocomo/cdktf-nu
 // Import modules here  
 // import { ModuleName } from "./.gen/modules/<ModuleName>"
 // The ModuleName is the name you set to it in the cdktf.json with a capital first letter
-
+// When using the NutrinoTFOutput the repo param should be this.getId() - `repo: this.getId()`
 class MyStack extends NutrinoCdktfStack {
     constructor(scope: Construct, id: string){
         super(scope, id);
